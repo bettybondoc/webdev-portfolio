@@ -1,0 +1,190 @@
+*,
+*::before,
+*::after  {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*
+Color Palette:
+#101935 (navy)
+#F2FDFF (gray)
+#B8DBD9 (seafoam green)
+#93B7BE (dark seafoam green)
+#0B3C49 (darkgreen)
+*/
+
+body {
+	font-family: 'Noto Sans', sans-serif;
+}
+
+/*
+ *
+ * Header
+ *
+ */
+
+header {
+	height: 100vh;
+	background-color: #101935;
+	position: relative;
+}
+
+.header-text {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.header-text > a {
+	font-size: 2.5em;
+	color: white;
+}
+
+/*
+ *
+ * Navbar
+ *
+ */
+
+ .navbar {
+ 	border-radius: 0;
+ }
+
+ /*
+ *
+ * About
+ *
+ */
+
+.profile-pic {
+	height: 200px;
+	border-radius: 50%;
+}
+
+.about .img-responsive {
+	margin: 0 auto;
+}
+
+.about h2 {
+	text-align: center;
+}
+
+.resume-btn {
+	margin: 0 auto;
+}
+
+/*
+ *
+ * Progress Bar
+ *
+ */
+
+.progress {
+	height: 30px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	background-color: #F2FDFF;
+	border-radius: 0;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0);
+}
+
+.progress-bar {
+	background-color: #93B7BE;
+}
+
+.skills .col-xs-3 {
+	text-align: center;
+	height: 30px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	background-color: #101935;
+	border-radius: 0;
+	color: white;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0);
+}
+
+.progress.col-xs-9 {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+/*
+ *
+ * Skills
+ *
+ */
+
+/*
+ *
+ * Projects
+ *
+ */
+
+/*
+ *
+ * Email
+ *
+ */
+
+/*
+ *
+ * Social
+ *
+ */
+
+
+
+/*
+ *
+ * Media Query XS - Phones
+ *
+ */
+
+@media only screen and (max-width: 767px) {
+
+}
+
+/*
+ *
+ * Media Query SM - Tablets
+ *
+ */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/*
+ *
+ * Media Query MD - Desktops
+ *
+ */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/*
+ *
+ * Media Query LG - Large Desktops
+ *
+ */
+
+@media only screen and (min-width: 1200px){
+
+}
+
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
