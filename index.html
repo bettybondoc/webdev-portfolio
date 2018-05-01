@@ -12,12 +12,12 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
 	<!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 	<!-- font awesome cdn -->
-	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
-
-	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
 	<!-- import bootstrap css -->
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
@@ -29,46 +29,44 @@
 
 	<!-- Header -->
 	<header class="container-fluid header" id="Home">
-		<div class="header-text">
-			<h1>Betty Bondoc</h1>
-			<h2>Insert tagline here</h2>
-			<a href="#Navigation"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+		<!-- particles.js container -->
+		<div id="particles-js">
+			<div class="header-text">
+				<h1><span class="pink">Hi, I’m Betty. </span>I’m a project manager, writer, designer and <span class="cyan">developer</span>.
+				</h1>
+			</div>
 		</div>
-	</header> <!-- /.header -->
 
-	<!-- Navbar -->
-	<nav class="navbar navbar-inverse" id="Navigation">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<i class="fa fa-bars" aria-hidden="true"></i>
-				</button>
-				<a class="navbar-brand menu-text" href="home.html">Betty Bondoc</a>
-			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#About">About</a></li>
-					<li><a href="#Projects">Projects</a></li>
-					<li><a href="#Contact">Contact</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav> <!-- /.navbar -->
+	</header> <!-- /.header -->
 	
 	<main>
 		<!-- About -->
-		<div class="about container-fluid" id="About">
+		<div class="about" id="About">
 			<div class="row">
 				<!-- profile -->
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 profile">
 					<img class="profile-pic img-responsive" alt="Betty Bondoc" src="img/profile.jpg"></img>
 					<h2>Betty Bondoc</h2>
-					<p>This is where I tell you about myself but I don't know what to say yet so kindly read some placeholder in the meantime. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p>I’m a writer and graphic designer by profession hoping to transition into web development thanks to a love for coding I have realized belatedly. While I’m making a late start as a developer, I believe that everything I have done so far career-wise have made a great impact to help me become the type of programmer I want to be – one who is organized enough to work efficiently, one who is creative enough to break boundaries and one who is critical enough to do things with purpose.</p>
+					<div class="resume">
+						<a href="assets/bondoc_cv.pdf" download="Betina Bondoc CV"><button class="btn center-block" href="#">Download CV</button></a>
+					</div>
 				</div> <!-- /.profile -->
 
 				<!-- skills -->
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 skills">
-					<h2>Skills</h2>
+					<!-- <h2>Skills</h2> -->
+
+					<div class="row">
+						<div class="col-xs-3">
+							<span class="skill">Project Management</span>
+						</div> <!-- /.col -->
+						<div class="progress col-xs-9">
+							<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+								<span class="sr-only">100%</span>
+							</div>
+						</div> <!-- /.col -->
+					</div> <!-- /.row -->
 
 					<div class="row">
 						<div class="col-xs-3">
@@ -194,45 +192,69 @@
 				</div> <!-- /.skills -->	
 			</div> <!-- /.row -->
 
-			<div class="row">
+			<div class="row skills-container">
+
 				<div class="skill1 col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
 					<!-- <img class="skill-icon" src="" alt="This is a skill"></img> -->
-					<i class="fas fa-tasks skill-icon"></i>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<div class="skill-container"><i class="far fa-calendar-check skill-icon"></i></div>
+					<h3>Project Manager</h3>
+					<p>Delivering quality output at least a day before the deadline has been my mantra for as long as I can remember. All of my projects begin with a highly-organized plan and a timeline with sufficient breathing space to ensure that the quality is never compromised.</p>
 				</div> <!-- /.skill1 -->
 				<div class="skill2 col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
 					<!-- <img class="skill-icon" src="" alt="This is a skill"></img> -->
-					<i class="fas fa-tasks skill-icon"></i>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					
+					<div class="skill-container"><i class="fas fa-pencil-alt skill-icon"></i></div>
+					<h3>Writer</h3>
+					<p>I write content mostly for the digital space – blogs, features, marketing and branding copy – catering to diverse audiences. More than just finding the right words that would speak to your market, it is about sharing a story and creating an experience that your audience would enjoy.</p>
 				</div> <!-- /.skill2 -->
 				<div class="skill3 col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
 					<!-- <img class="skill-icon" src="" alt="This is a skill"></img> -->
-					<i class="fas fa-tasks skill-icon"></i>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					
+					<div class="skill-container"><i class="fas fa-paint-brush skill-icon"></i></div>
+					<h3>Designer</h3>
+					<p>From marketing collateral to videos to merch, I design a wide variety of things. While I personally prefer minimalist designs, I am not afraid to experiment – mixing and matching various elements – in order to give a particular design its own character.</p>
 				</div> <!-- /.skill3 -->
 				<div class="skill4 col-xs-12 col-sm-6 col-md-6 col-lg-3 text-center">
 					<!-- <img class="skill-icon" src="" alt="This is a skill"></img> -->
-					<i class="fas fa-tasks skill-icon"></i>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					
+					<div class="skill-container"><i class="fas fa-code skill-icon"></i></div>
+					<h3>Developer</h3>
+					<p>Though new in this arena, I can write clean codes for responsive, dynamic and intuitive websites. I enjoy problem-solving as much as I enjoy making things beautiful. What I lack in experience I make up for with my ability to quickly grasp new concepts and complex ideas.</p>
 				</div> <!-- /.skill4 -->
 			</div> <!-- /.row -->
-
-			<div class="resume">
-				<button class="btn center-block" href="#">Download my CV</button>
-			</div>
 		</div> <!-- /.about -->
 
 		<!-- Projects -->
 		<div class="projects" id="projects">
+			<h2>PROJECTS</h2>
 			<div class="row">
 				<div class="csp col-xs-12 col-sm-4">
-					<a href="https://bettybondoc.github.io/b3nc-bondoc-betina/csp1/index.html"><img class="csp1" src="img/csp1.jpg" alt="The Wedding Project"></a>
+					<a href="https://bettybondoc.github.io/b3nc-bondoc-betina/csp1/index.html">
+						<div class="project-description">
+							<!-- <h3>The Wedding Project</h3> -->
+							<!-- <p>A Wedding Blog made with Bootstrap and Vanila JS</p> -->
+						</div>
+						<img class="csp1" src="img/csp1.jpg" alt="The Wedding Project">
+					</a>
 				</div>
 				<div class="csp col-xs-12 col-sm-4">
-					<a href="https://chula-organics.000webhostapp.com"><img src="img/csp2.JPG" alt="Chula Organics"></a>
+					<a href="https://chula-organics.000webhostapp.com">
+						<div class="project-description">
+							<!-- <h3>Chula Organics</h3> -->
+							<!-- <p>An e-commerce website for a local skincare line made with Bootstrap, jQuery and Vanilla PHP</p> -->
+						</div>
+						<img class="csp2" src="img/csp2.JPG" alt="Chula Organics">
+					</a>
 				</div>
 				<div class="csp col-xs-12 col-sm-4">
-					<a href="https://idue.000webhostapp.com"><img src="img/csp3.png" alt="iDue"></a>
+					<a href="https://idue.000webhostapp.com">
+						<div class="project-description">
+							<!-- <h3>iDue</h3> -->
+							<!-- <p>A Project Management Web App heavily-inspired by Trello made with jQuery, Ajax and Laravel</p> -->
+						</div>
+						<img class="csp3" src="img/csp3.jpg" alt="iDue">
+					</a>
 				</div>
 			</div>
 		</div>
@@ -257,21 +279,27 @@
 						<textarea class="form-control" rows="5" id="message" placeholder="Your message"></textarea>
 					</div>
 					<div class="form-group">        
-						<button type="submit" class="btn btn-default">Submit</button>
+						<button type="submit" class="btn btn-email">Submit</button>
 					</div>
 				</form>
+				<div class="top-container">
+					<span class="top">
+						<a href="#top"><i class="fas fa-angle-double-up"></i></a>				
+					</span>
+					
+				</div>
 			</div> <!-- /.email container -->
 
 			<!-- Social Media -->
 			<div class="social container" id="Contact">
-				<a href="#top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
 				<div class="contact">
-					<a href="https://www.github.com" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-					<a href="https://www.gitlab.com" target="_blank"><i class="fa fa-gitlab" aria-hidden="true"></i></a>
-					<a href="https://www.stackoverflow.com" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-					<a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					<a href="https://github.com/bettybondoc" target="_blank"><i class="fab fa-github"></i></a>
+					<a href="https://gitlab.com/bettybondoc" target="_blank"><i class="fab fa-gitlab"></i></a>
+					<a href="https://stackexchange.com/users/13139638/betty-bondoc" target="_blank"><i class="fab fa-stack-overflow"></i></a>
+					<a href="https://www.linkedin.com/in/betinabondoc/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+					<a href="https://www.instagram.com/bettybondoc/" target="_blank"><i class="fab fa-instagram"></i></a>
 				</div>
-				<small>Betty Bondoc &copy; 2017</small>
+				<div class="copyright">Betty Bondoc &copy; 2018</div>
 			</div> <!-- /. social container -->
 		</div> <!-- /.container-fluid -->
 	</footer>
@@ -287,3 +315,10 @@
 
 </body>
 </html>
+
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script type="text/javascript">
+	particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+</script>
