@@ -293,6 +293,7 @@ footer {
 	margin-top: 15px;
 	background-color: #262f38;
 	width: 50%;
+	text-align: center;
 }
 
 .email h2,
@@ -308,7 +309,7 @@ footer {
 }
 
 .email p {
-	margin-bottom: 15px;
+	margin-bottom: 40px;
 }
 
 .form-horizontal {
