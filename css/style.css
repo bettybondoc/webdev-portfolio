@@ -316,7 +316,7 @@ header {
 
 .text p {
 	font-weight: normal;
-	height: 
+	font-size: .7em;
 }
 
 .csp:hover .project-description {
