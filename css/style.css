@@ -279,7 +279,6 @@ header {
 
 .csp {
 	position: relative;
-	/*width: 50%;*/
 }
 
 .image {
@@ -299,13 +298,11 @@ header {
 	opacity: 0;
 	transition: .5s ease;
 	background-color: #1b242f;
-	/*padding: 0 50px;*/
 	margin: 0 auto;
 }
 
 .text {
 	color: white;
-	font-size: 20px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -316,7 +313,7 @@ header {
 
 .text p {
 	font-weight: normal;
-	font-size: .7em;
+	font-size: .8em;
 }
 
 .csp:hover .project-description {
@@ -471,6 +468,10 @@ footer {
 
 	.email {
 		width: 100%;
+	}
+
+	.project-description {
+		height: 96%;
 	}
 }
 
